@@ -1,0 +1,14 @@
+{
+  "name": "desmos-workspace",
+  "private": true,
+  "description": "Live bridge between desmos.com and a shared workspace Claude can edit",
+  "scripts": {
+    "build": "node scripts/build-userscript.mjs",
+    "test": "node --test test/*.test.mjs",
+    "test:e2e": "npm run build && node --test test/e2e/*.e2e.mjs"
+  },
+  "devDependencies": {
+    "postgres": "3.4.5"
+  },
+  "type": "module"
+}
